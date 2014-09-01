@@ -25,7 +25,10 @@ class Shopping_cart extends CI_Controller {
 		$this->load->model('Product');
 
 		$post_data = $this->input->post();
-		$this_product = $this->Product->get_product_by_id($post_data['prod_id']);
+
+		
+
+
 
 		$cart_item = array();
 		$cart_item[] = $post_data['quantity'];
